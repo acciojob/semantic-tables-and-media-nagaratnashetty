@@ -1,42 +1,84 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Media List</title>
+    <style>
+        /* Add border to the entire table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        ol {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<table>
-		<thead>
-			<th>Roll Number</th>
-			<th>Names</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td>Nagaratna</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>Sachin</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>Santosh</td>
-			</tr>
-		</tbody>
-	</table>
-	<h1>List of medias</h1>
-	<ol>
-		<li><img src="https://picsum.photos/id/123/200/300" alt="image1"</li>
-	<li><video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" </li>
-	
-	<li><audio src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" </li>
-	</ol>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Charlie</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Heading -->
+    <h2>List of medias</h2>
+
+    <!-- Ordered List -->
+    <ol>
+        <li>
+            Image: 
+            <img src="https://picsum.photos/id/123/200/300" alt="Random image from Picsum" />
+        </li>
+        <li>
+            Video: 
+            <video controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </li>
+        <li>
+            Audio: 
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </li>
+    </ol>
 
 </body>
 
